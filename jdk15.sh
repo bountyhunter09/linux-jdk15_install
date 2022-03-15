@@ -32,11 +32,11 @@ echo -e "${green}Please Select java jdk 15.0.2 mode number and press enter${gree
 sleep 1
 echo -e "${try}In bellow${try}"
 sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk-15.0.2/bin/java" 0 &> /dev/null
+sudo update-alternatives --config java
 sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk-15.0.2/bin/javac" 0 &> /dev/null
 sudo update-alternatives --set java /usr/lib/jvm/jdk-15.0.2/bin/java &> /dev/null
 sudo update-alternatives --set javac /usr/lib/jvm/jdk-15.0.2/bin/javac &> /dev/null
 sleep 1
-sudo update-alternatives --config java
 echo -e "${blue}Your Java version is ${blue} -->" 
 sleep 2
 java -version
@@ -70,11 +70,11 @@ echo -e "${green}Please Select java jdk 15.0.2 mode number and press enter${gree
 sleep 1
 echo -e "${try}In bellow${try}"
 sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk-15.0.2/bin/java" 0 &> /dev/null
+sudo update-alternatives --config java
 sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk-15.0.2/bin/javac" 0 &> /dev/null
 sudo update-alternatives --set java /usr/lib/jvm/jdk-15.0.2/bin/java &> /dev/null
 sudo update-alternatives --set javac /usr/lib/jvm/jdk-15.0.2/bin/javac &> /dev/null
 sleep 1
-sudo update-alternatives --config java
 echo -e "${blue}Your Java version is ${blue} -->" 
 sleep 2
 java -version
